@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball scoreboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="javaScript.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">Basketball scoreboard</h1>
+        <figure class="time-box" id="timeBox">
+            <span class="time__minutes" id="timeMinutes">12</span>
+            <span>:</span>
+            <span class="time__seconds" id="timeSeconds">00</span>
+        </figure>
+        <button class="game-control__btn game-control__btn--center" id="startBtn">Start</button>
+        <section class="score">
+            <h2 class="score__subtitle">HOME</h2>
+            <figure class="score__box" id="homeBox">
+                <p class="score__points" id="homePoints">0</p>
+            </figure>
+            <section class="score__incrament-box">
+                <article class="score__incrament" data-id="incramentOne"> + 1</article>
+                <article class="score__incrament" data-id="incramentTwo"> + 2</article>
+                <article class="score__incrament" data-id="incramentThree"> + 3</article>
+            </section>
+        </section>        
+        <section class="score">
+            <h2 class="score__subtitle">GUEST</h2>
+            <figure class="score__box" id="guestBox">
+                <p class="score__points" id="guestPoints">0</p>
+            </figure>
+            <section class="score__incrament-box">
+                <article class="score__incrament" data-id="incramentOne"> + 1</article>
+                <article class="score__incrament" data-id="incramentTwo"> + 2</article>
+                <article class="score__incrament" data-id="incramentThree"> + 3</article>
+            </section>        
+        </section>
+        <section class="game-control">
+            <button class="game-control__btn" id="newGameBtn">New game</button>
+            <button class="game-control__btn" id="pauseGameBtn">Pause game</button>
+        </section>
+    </div>
+</body>
+</html>

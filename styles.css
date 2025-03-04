@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-bg-colour: #1B244A;
+    --secondary-bg-color: #5a6dcf;
+    --black-bg-colour: #000;
+    --white-text-colour: #fff;
+    --red-text-colour: #F94F6D;
+    --blue-text-colour: #9AABD8;
+
+}
+
+body {
+    background-color: var(--secondary-bg-color);    
+}
+
+.wrapper {
+    max-width: 370px;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: 2.5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    background-color: var(--primary-bg-colour);
+    gap: .5rem;
+    border-radius: 10px;
+    font-family: Orbitron, sans-serif;
+}
+
+.title {
+    justify-self: center;
+    grid-column: 1 / span 2;
+    color: var(--white-text-colour);
+    font-size: 1.5rem;
+}
+
+.time-box {
+    grid-column: span 2;
+    justify-self: center;
+    background-color: var(--black-bg-colour);
+    color: var(--red-text-colour);
+    max-width: 80%;
+    text-align: center;
+    padding: .5rem 1rem;
+    font-size: 3rem;
+    border: 2px solid var(--blue-text-colour);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.score {
+    justify-self: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score__subtitle {
+    color: var(--white-text-colour);
+    text-align: center;
+    font-weight: 900;
+}
+
+.score__box {
+    /* justify-self: center; */
+    background-color: var(--black-bg-colour);
+    width: 130px;
+    height: 105px;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.score__points {
+    text-align: center;
+    color: var(--red-text-colour);
+    font-size: 3.5rem;
+}
+
+.score__incrament-box {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.score__incrament {
+    flex: 1;
+    border: 1px solid var(--blue-text-colour);
+    font-size: 1rem;
+    color: var(--blue-text-colour);
+    padding: 0.2rem 0;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.game-control, .game-control__btn--center {
+    grid-column: span 2;
+    justify-self: center;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    border: 1px solid var(--blue-text-colour);
+}
+
+.game-control__btn {
+    max-width: 200px;
+    padding: .4rem .8rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--primary-bg-colour);
+    cursor: pointer;
+}
+
+.resume-btn {
+    background-color: var(--blue-text-colour);
+}
